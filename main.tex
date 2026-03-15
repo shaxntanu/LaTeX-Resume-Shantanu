@@ -1,0 +1,179 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & \textbf{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectItem}[3]{
+  \item\small{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#3} \\
+    \end{tabular*}
+    \vspace{-2pt}
+    #2
+  }
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\newcommand{\resumeResearchItem}[3]{
+  \item\small{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#3} \\
+    \end{tabular*}
+    \vspace{-2pt}
+    #2
+  }
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\Huge \scshape Shantanu Maratha} \\
+  \vspace{2pt}
+  \small ECE Undergraduate \textbar{} Embedded Systems Engineer (ESP32, Sensors, IoT) \\
+  \vspace{2pt}
+  \href{mailto:i.am.shantanu07@gmail.com}{i.am.shantanu07@gmail.com} \textbar{} +91 9418109763 \textbar{} Patiala, Punjab, India \\
+  \vspace{2pt}
+  \href{https://www.linkedin.com/in/shantanu-maratha28/}{Linkedin} \textbar{} \href{https://shantanu-vsc-portfolio.vercel.app}{Portfolio} \textbar{} \href{https://github.com/shaxntanu}{GitHub}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thapar Institute of Engineering and Technology}{Patiala, Punjab}
+      {Bachelor of Technology - Electronics and Communication Engineering}{August 2025 - Present}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Embedded Systems}{ESP32, Arduino, I2C, UART, SPI, MQTT, Real-time Processing}
+	\resumeSubItem{Programming}{C, C++ (Arduino), Python, JavaScript}
+	\resumeSubItem{Hardware / Electronics}{Sensors, Electromagnets, Power Electronics, GPS Modules, OLED Displays}
+	\resumeSubItem{Tools / Platforms}{Git, GitHub, KiCad, Arduino IDE, ESP-IDF, Vercel}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects / Open-Source}
+\resumeSubHeadingListStart
+\resumeProjectItem{\href{https://github.com/shaxntanu/Zephyr-Station}{Zephyr-Station}}{Designed an ESP32-based environmental monitoring system integrating multiple sensors via I2C with OLED visualization, SD-card data logging, and threshold-based alert mechanisms.}{ESP32, C++}
+\vspace{2pt}
+\resumeProjectItem{\href{https://github.com/shaxntanu/Jolt-Locator}{Jolt-Locator}}{Developed a GPS-based true-north navigation system on ESP32 with real-time heading computation and location processing using UART communication.}{ESP32, C++}
+\vspace{2pt}
+\resumeProjectItem{\href{https://github.com/shaxntanu/The-Ruin-Machine}{The-Ruin-Machine}}{Implemented a probability-based stochastic simulator on ESP32 with physical I/O interfacing (OLED display and buzzer actuation).}{ESP32, C++}
+\vspace{2pt}
+\resumeProjectItem{\href{https://github.com/shaxntanu/Geometrical-Shape-Detection-and-Recognition-using-Python-in-Image-Processing-ELC-TIET-2029-ECE}{Geometrical Shape Detection} \textbar{} \href{https://docs.google.com/document/d/10oCl39Ste8v906QpB7fuZsjLb0rCIReW/edit}{Report}}{Developed 6 image analysis algorithms using OpenCV and NumPy for automated geometrical shape detection and recognition with modular Python implementations.}{Python, OpenCV}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{\href{https://ragastra-mvlev.vercel.app}{Ragastra MV Lev}}{Patiala, Punjab}
+    {Hardware \& Controls Engineer}{September 2025 - Present}
+    \resumeItemListStart
+        \resumeItem{Electromagnetic System Design}
+          {Designed and tuned custom electromagnets for magnetic levitation prototype with optimized coil parameters.}
+        \resumeItem{Power Electronics}
+          {Designed and debugged SMPS-based power circuitry for inductive electromagnetic loads.}
+        \resumeItem{Motor Control Systems}
+          {Implemented Arduino-based synchronized dual stepper motor control with real-time actuation.}
+      \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{\href{https://grosity.in}{Grosity}}{Patiala, Punjab}
+		{Early-Stage Founding Engineer}{October 2025 - February 2026}
+		\resumeItemListStart
+        \resumeItem{Web Development}
+          {Developed and deployed company website using AI-assisted development workflows (Claude, GitHub Copilot, Kiro IDE).}
+        \resumeItem{Autonomous Systems R\&D}
+          {Contributed to embedded electronics and control logic for autonomous payload-delivery drone systems.}
+        \resumeItem{Product Strategy}{Aligned engineering decisions with B2B and D2C product models and business strategy.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Ongoing Research}
+\resumeSubHeadingListStart
+\resumeResearchItem{GHFCVs - Reverse Engineering Study}{Literature review and comparative analysis of DC-DC converter topologies with hands-on teardown of commercial GHFCV systems to understand power electronics architecture and operational principles.}{December 2025 - Present}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Certifications \& Achievements}
+\begin{description}[font=$\bullet$]
+\item {\textbf{\href{https://drive.google.com/file/d/1yQglfFhR8SS8y3ibK8zGnDyMitvzIPrU/view}{Internet of Things}} - MIT Professional Education x Santander Open Academy}
+\vspace{-5pt}
+\item {\textbf{\href{https://drive.google.com/file/d/16lO-SM8k2TGsSAl6qkyhInfl8d3UZnD5/view}{Google: Artificial Intelligence and Productivity}} - Google x Santander Open Academy}
+\vspace{-5pt}
+\item {\textbf{\href{https://certificate.givemycertificate.com/c/01f27daf-d843-45ac-b6f9-67cbdf4fc440}{National Finalist}} - E Summit Ideastorm 2026, IIT Roorkee}
+\end{description}
+
+\end{document}
