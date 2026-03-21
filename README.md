@@ -7,7 +7,3 @@ Professional resume built with LaTeX.
 ```bash
 pdflatex main.tex
 ```
-
-## Preview
-
-View the compiled PDF: [main.pdf](main.pdf)
