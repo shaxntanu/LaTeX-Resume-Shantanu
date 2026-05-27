@@ -1,4 +1,4 @@
-# LaTeX Resume - Shantanu Maratha
+# LaTeX Resume - Shantanu
 
 Professional resume built with LaTeX.
 
