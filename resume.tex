@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -37,13 +37,13 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item\normalsize{
     \textbf{#1}{: #2}
   }
 }
 
 \newcommand{\resumeItemWithoutTitle}[1]{
-  \item\small{
+  \item\normalsize{
     {\vspace{-2pt}}
   }
 }
@@ -57,7 +57,7 @@
 }
 
 \newcommand{\resumeProjectItem}[3]{
-  \item\small{
+  \item\normalsize{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{#3} \\
     \end{tabular*}
@@ -70,7 +70,7 @@
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
 \newcommand{\resumeResearchItem}[3]{
-  \item\small{
+  \item\normalsize{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{#3} \\
     \end{tabular*}
@@ -95,7 +95,7 @@
 \begin{center}
   {\Huge \scshape Shantanu} \\
   \vspace{2pt}
-  \small ECE Undergraduate \textbar{} Embedded Systems Engineer (ESP32, Sensors, IoT) \\
+  \normalsize ECE Undergraduate \textbar{} Embedded Systems Engineer (ESP32, Sensors, IoT) \\
   \vspace{2pt}
   \href{mailto:shaxntanu@gmail.com}{\textbf{shaxntanu@gmail.com}} \textbar{} +91 9418109763 \textbar{} Patiala, Punjab, India \\
   \vspace{2pt}
@@ -127,15 +127,15 @@
 \vspace{-5pt}
 \section{Selected Projects \& Open-Source Contribution}
 \resumeSubHeadingListStart
-\resumeProjectItem{\href{https://www.adafruit.com}{Adafruit} \href{https://github.com/adafruit/circuitpython/pull/11646}{CircuitPython - Wi-Fi API}}{Open-source contribution in C: Implemented Raspberry Pi support for \texttt{wifi.radio.ap\_info}; approach credited in the merged upstream PR. Initial \href{https://github.com/adafruit/circuitpython/pull/11625}{PR \#11625}.}{C, CircuitPython}
+\resumeProjectItem{\href{https://www.adafruit.com}{Adafruit} \href{https://github.com/adafruit/circuitpython/pull/11646}{CircuitPython - Wi-Fi API}}{Open-source C contribution: Added Raspberry Pi \texttt{wifi.radio.ap\_info} support; my approach was credited in merged PR \#11646. Initial \href{https://github.com/adafruit/circuitpython/pull/11625}{PR \#11625}.}{C, CircuitPython}
 \vspace{1pt}
-\resumeProjectItem{\href{https://github.com/VIGIL-IoT/VIGIL-FUSE}{VIGIL-FUSE}}{Built a Python firmware-security CLI with 7 native rules and evidence-backed JSON/SARIF findings.}{Python, IoT Security}
+\resumeProjectItem{\href{https://github.com/VIGIL-IoT/VIGIL-FUSE}{VIGIL-FUSE}}{Built a Python CLI scanning embedded/IoT code with 7 security rules; emits JSON/SARIF findings with evidence.}{Python, IoT Security}
 \vspace{2pt}
-\resumeProjectItem{\href{https://github.com/shaxntanu/Zephyr-Station}{Zephyr Station}}{Integrated 7 sensor modules into an ESP32 monitor with OLED, SD logging, alerts, and a live dashboard.}{ESP32, C++}
+\resumeProjectItem{\href{https://github.com/shaxntanu/Zephyr-Station}{Zephyr Station}}{Built a room-monitoring ESP32 with 7 sensor modules, OLED, RTC-stamped SD logs, alerts, and live dashboard.}{ESP32, C++}
 \vspace{1pt}
-\resumeProjectItem{\href{https://github.com/shaxntanu/Jolt-Locator}{Jolt Locator}}{Designed a custom PCB for an ESP32 GPS/compass navigator with OLED guidance and real-time heading/distance.}{ESP32, KiCad}
+\resumeProjectItem{\href{https://github.com/shaxntanu/Energy-Consumption-Pattern-Analysis-using-PCA-and-K-Means}{Energy Consumption Analysis}}{Clustered 200 synthetic annual household energy profiles with PCA/K-Means; found 4 archetypes (ARI 0.813).}{Python, PCA, K-Means}
 \vspace{1pt}
-\resumeProjectItem{\href{https://github.com/shaxntanu/Energy-Consumption-Pattern-Analysis-using-PCA-and-K-Means}{Energy Consumption Analysis}}{Applied PCA/K-Means to 200 synthetic annual energy profiles; recovered 4 archetypes (ARI 0.813).}{Python, PCA, K-Means}
+\resumeProjectItem{\href{https://github.com/shaxntanu/NBody-Simulation-C}{N-Body Simulation}}{Built an interactive C/SDL2 gravity simulator with Newtonian forces, momentum-conserving collisions, and energy tracking.}{C, SDL2}
 \resumeSubHeadingListEnd
 
 \vspace{-5pt}
